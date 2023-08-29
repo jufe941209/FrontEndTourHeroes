@@ -1,9 +1,13 @@
-h1{
-    color:red;
+h2{
+    color:white;
+    text-align: center;
 }
-p{
-    color:blueviolet;
+button{
+    color:black;
+    align-items: right;
+   
 }
-li{
-    color:blue;
+
+.fondo{
+    background-color: black;
 }
