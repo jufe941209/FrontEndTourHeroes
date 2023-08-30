@@ -1,38 +1,27 @@
-<h3>Detalles del jugador</h3>
 
 
+    <div class="columnaCentral">
 
+     <h3>Detalles del jugador</h3>
 
-<ul>
-    <div>
-        
-        <li><span>ID: </span><span>{{myHeroe1.id}}</span></li>
-    </div>
-    <div>
-        <li><span>Nombre: </span><span>{{myHeroe1.name}}</span></li>
-    </div>
-    <div>
-        <li><span>Posición: </span><span>{{myHeroe1.posicion}}</span></li>
-    </div>
-    <div>
-        <li><span>Equipo: </span><span>{{myHeroe1.equipo}}</span></li>
-    </div>
-
-
-<br>
-
-
-<div>
-    <li><span>ID: </span><span>{{myHeroe2.id}}</span></li>
+    <div class="lista" style="height: 200px;">
+    
+    <ul>
+        <li>
+            <label for="name1">Nombre: </label>
+            <input name="name1" [(ngModel)]="myHeroe1.name" placeholder="Nombre del jugador"/>
+        </li>
+    <br>
+        <li>
+            <label for="posicion1">Posición: </label>
+            <input name="posicion1" [(ngModel)]="myHeroe1.posicion" placeholder="Posicion del jugador"/>
+        </li>
+    <br>
+        <li>
+            <label for="equipo1">Equipo: </label>
+            <input name="equipo1" [(ngModel)]="myHeroe1.equipo" placeholder="Equipo del jugador"/>
+        </li>
+    </ul>
 </div>
-<div>
-    <li><span>Nombre: </span><span>{{myHeroe2.name}}</span></li>
 </div>
-<div>
-    <li><span>Posición: </span><span>{{myHeroe2.posicion}}</span></li>
-</div>
-<div>
-    <li><span>Equipo: </span><span>{{myHeroe2.equipo}}</span></li>
-</div>
-</ul>
 

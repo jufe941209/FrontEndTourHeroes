@@ -1,6 +1,11 @@
 h2{
     color:white;
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:xx-large;
+    font-style:inherit;
+    font-variant:small-caps;
+    font-weight: bold;
 }
 button{
     color:black;
