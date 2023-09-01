@@ -7,6 +7,7 @@ import { Heroe } from '../heroe';
   styleUrls: ['./heroe.css']
 })
 export class HeroeComponent {
+  mysHeroes:Heroe[]=[];
 
   myHeroe1:Heroe  ={
     id:1,
@@ -82,8 +83,6 @@ export class HeroeComponent {
     numeroCamiseta: 1
     
   }
-  
-  mysHeroes:Heroe[]=[];
   
   constuctor(){
     this.mysHeroes.push(this.myHeroe1);
