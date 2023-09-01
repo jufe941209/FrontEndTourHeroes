@@ -1,11 +1,13 @@
 
 
     <div class="columnaCentral">
-
-     <h3>Detalles del jugador</h3>
+        <div>
+             <h3>Detalles del jugador</h3>
+        </div>
+  
 
     <div class="lista" style="height: 200px;">
-    
+       
     <ul>
         <li>
             <label for="name1">Nombre: </label>
@@ -21,7 +23,14 @@
             <label for="equipo1">Equipo: </label>
             <input name="equipo1" [(ngModel)]="myHeroe1.equipo" placeholder="Equipo del jugador"/>
         </li>
+        
+        <div class="botones">
+            <button type='reset' value="Click Me" style="float: initial" >Crear</button>
+            <button type="submit" value="Click Me" style="float: initial">Eliminar</button>
+            <button type="update" value="Click Me" style="float: initial">Actualizar</button>
+        </div>
     </ul>
+    
 </div>
 </div>
 

@@ -1,18 +1,28 @@
-
 <div class="fondo">
-<h2>Listado de jugadores</h2>
-
-<div>
-    <ol>
-        <li>Radamel Falcao</li>
-        <li>Linda Caicedo</li>
-        <li>James Rodriguez</li>
-        <li>Luis Diaz</li>
-        <li>Yoreli Rincon</li>
-        <li>Mario Yepez</li>
-        <li>Santos Borre</li>
-        <li>Duvan Zapata</li>
-
-    </ol>
-</div>
+  <h2>Listado de jugadores</h2>
+  <!-- <select name="lista"> 
+    <option *ngFor="let myHeroe of mysHeroes" value="{{myHeroe.id}}">{{myHeroe.name}}
+    </select>       
+            
+            -->
+  <div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Nombre</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr  *ngFor="let myHeroe of mysHeroes">
+            <td scope="row">{{myHeroe.id}}</td>
+        <td>
+              <span class="data">{{myHeroe.name | uppercase}}</span>
+          </td>
+        </tr>
+      </tbody>
+      
+    </table>
+  </div>
 </div>

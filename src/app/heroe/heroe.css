@@ -1,5 +1,8 @@
+.columnaCentral{
+    background-color: black;
+}
 h3{
-    
+    color:aliceblue;
     text-align: center;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size:x-large;
@@ -27,5 +30,28 @@ label{
     float:left;
     width: 50%;
     position:relative;
+    border: 5px;
+    border-style:solid;
+    border-color:whitesmoke;
+}
+.botones{
+    float:center;
+    width: 33.33%;
+    position:relative;
+    align-items: center;
     
+    display:inline;
+    justify-content: center
+}
+button{
+    
+        font-size:11px;
+        font-family:Verdana,Helvetica;
+        font-weight:bold;
+        color:black;
+        background:#c4b50e;
+        border:0px;
+        width:80px;
+        height: 25px;;
+       
 }
