@@ -16,7 +16,8 @@
           </li>
           <!-- Otras entradas de datos -->
         </ul>
-        <a href="#" class="btn btn-primary d-block mx-auto">Consultar</a>
+        <a href="#" class="btn btn-primary d-block mx-auto"
+        (mousedown)="mouseDownHandler($event)">Consultar</a>
       </div>
 
       <div class="col-md-2" id="top2">
@@ -28,8 +29,9 @@
           </li>
           <!-- Otras entradas de datos -->
         </ul>
-        <a href="#" class="btn btn-primary d-block mx-auto">Consultar</a>
-      </div>
+        <a href="#" class="btn btn-primary d-block mx-auto"
+        (mousemove)="mouseMoveHandler($event)">Consultar</a>
+            </div>
 
       <!-- Repite esta estructura para las otras cajas -->
       <div class="col-md-2" id="top2">
@@ -41,8 +43,10 @@
           </li>
           <!-- Otras entradas de datos -->
         </ul>
-        <a href="#" class="btn btn-primary d-block mx-auto">Consultar</a>
-      </div>
+        <a href="#" class="btn btn-primary d-block mx-auto"
+        (mouseout)="mouseOutHandler($event)"
+        (mouseover)="mouseOverHandler($event)">Consultar</a>
+                </div>
 
       <div class="col-md-2" id="top2">
         <h5>Top 4</h5>
@@ -53,8 +57,8 @@
           </li>
           <!-- Otras entradas de datos -->
         </ul>
-        <a href="#" class="btn btn-primary d-block mx-auto">Consultar</a>
-      </div>
+        <a href="#" class="btn btn-primary d-block mx-auto"
+        (mouseup)="mouseUpHandler($event)">Consultar</a>      </div>
 
       <div class="col-md-2" id="top2">
         <h5>Top 5</h5>
@@ -68,6 +72,7 @@
         <a href="#" class="btn btn-primary d-block mx-auto">Consultar</a>
       </div>
 
+      
     </div>
   </div>
 </div>

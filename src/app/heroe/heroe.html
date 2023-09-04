@@ -11,8 +11,9 @@
           />
           <div class="card-body text-center">
             <h5 class="card-title">{{h.name}}</h5>
-            <p class="card-text">{{h.equipo}}</p>
-            <a href="#" class="btn btn-primary d-block mx-auto">Ver detalles</a>
+            <p class="card-text">Equipo: {{h.equipo}}</p>
+            <p class="card-text">Posición: {{h.posicion}}</p>
+            <p class="card-text">Numero Camiseta: {{h.numeroCamiseta}}</p>
           </div>
         </div>
       </div>
@@ -25,15 +26,17 @@
     <div class="row justify-content-center align-items-center" style="min-height: 30vh;">
       <div class="col-md-4">
         <form action="#" method="POST">
-          <input
-            name="namenuevoheroe"
-            id="namenuevoheroe"
+          <input #namenewheroe
+            name="namenewheroe"
+            id="namenewheroe"
             type="text"
             placeholder="Nombre del nuevo jugador"
-          />
-          <button type="button" (click)="nuevoHeroe()">Agregar Héroe</button>
+          >
+          <button type="button" (click)="newHeroe(namenewheroe.value)" (mousemove)="mouseMoveHandler($event)">Agregar Héroe</button>
         </form>
       </div>
     </div>
   </div>
 </div>
+
+
