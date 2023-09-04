@@ -9,4 +9,10 @@ h3{
     object-fit:cover; /* Controla cómo se ajusta la imagen en el contenedor */
   }
 
-  
+  .center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
