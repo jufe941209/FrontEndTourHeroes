@@ -1,34 +1,39 @@
-
-
-    <div class="columnaCentral">
-
-  
-
-    <div class="lista" style="height: 200px;">
-        <h3>Detalles del jugador</h3>
-    <ul>
-        <li>
-            <label for="name1">Nombre: </label>
-            <input name="name1" [(ngModel)]="myHeroe1.name" placeholder="Nombre del jugador"/>
-        </li>
-    <br>
-        <li>
-            <label for="posicion1">Posición: </label>
-            <input name="posicion1" [(ngModel)]="myHeroe1.posicion" placeholder="Posicion del jugador"/>
-        </li>
-    <br>
-        <li>
-            <label for="equipo1">Equipo: </label>
-            <input name="equipo1" [(ngModel)]="myHeroe1.equipo" placeholder="Equipo del jugador"/>
-        </li>
-        
-        <div class="botones">
-            <button type='reset' >Crear</button>
-            <button type="submit">Eliminar</button>
-            <button type="update">Actualizar</button>
+<div class="Detalles">
+  <h3>Detalles del jugador</h3>
+  <div class="container">
+    <div class="row">
+      <div *ngFor="let h of mysHeroes" class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card">
+          <img
+            class="card-img-top img-fixed-size align-self-center"
+            src="../assets/img-heroes/{{h.id}}.png"
+            alt="Image for {{h.name}}"
+          />
+          <div class="card-body text-center">
+            <h5 class="card-title">{{h.name}}</h5>
+            <p class="card-text">{{h.equipo}}</p>
+            <a href="#" class="btn btn-primary d-block mx-auto">Ver detalles</a>
+          </div>
         </div>
-    </ul>
-    
-</div>
+      </div>
+    </div>
+  </div>
 </div>
 
+<div class="botonAgregar">
+  <div class="container">
+    <div class="row justify-content-center align-items-center" style="min-height: 30vh;">
+      <div class="col-md-4">
+        <form action="#" method="POST">
+          <input
+            name="namenuevoheroe"
+            id="namenuevoheroe"
+            type="text"
+            placeholder="Nombre del nuevo jugador"
+          />
+          <button type="button" (click)="nuevoHeroe()">Agregar Héroe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

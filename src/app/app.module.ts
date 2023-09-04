@@ -8,7 +8,10 @@ import { DetalleHeroeComponent } from './detalle-heroe/detalle-heroe.component';
 import { BusquedaHeroeComponent } from './busqueda-heroe/busqueda-heroe.component';
 import { HeroeComponent } from './heroe/heroe.component';
 import { MensajesComponent } from './mensajes/mensajes.component';
-import {FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms';
+import { NavbarComponent } from './navbar/navbar.component';
+
+
 
 @NgModule({
   declarations: [
@@ -17,7 +20,9 @@ import {FormsModule} from '@angular/forms'
     DetalleHeroeComponent,
     BusquedaHeroeComponent,
     HeroeComponent,
-    MensajesComponent
+    MensajesComponent,
+    NavbarComponent,
+
   ],
   imports: [
     BrowserModule,

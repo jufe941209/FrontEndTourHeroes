@@ -2,144 +2,76 @@
   <div>
     <h3>Top 5 Seleccion Colombia</h3>
     <p>
-      Aqui encontraras un listado con los 5 jugadores mas importantes de la
-      selección Colombia
+      Aquí encontrarás un listado con los 5 jugadores más importantes de la selección Colombia
     </p>
   </div>
-  <div>
-
-    <h5>Top 1</h5>
-
-    <div>
-      <ul>
-        <li >
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2" id="top1">
+        <h5>Top 1</h5>
+        <ul>
+          <li>
             <label for="name1">Nombre: </label>
             <input name="name1" [(ngModel)]="topHeroe1.name" placeholder="Nombre del jugador"/>
-        </li>
-        <li>
-            <label for="posicion1">Posición: </label>
-            <input name="posicion1" [(ngModel)]="topHeroe1.posicion" placeholder="Posicion del jugador"/>
-        </li>
-        <li>
-            <label for="equipo1">Equipo: </label>
-            <input name="equipo1" [(ngModel)]="topHeroe1.equipo" placeholder="Equipo del jugador"/>
-        </li>
-
+          </li>
+          <!-- Otras entradas de datos -->
         </ul>
+        <a href="#" class="btn btn-primary d-block mx-auto">Consultar</a>
+      </div>
+
+      <div class="col-md-2" id="top2">
+        <h5>Top 2</h5>
+        <ul>
+          <li>
+            <label for="name2">Nombre: </label>
+            <input name="name2" [(ngModel)]="topHeroe2.name" placeholder="Nombre del jugador"/>
+          </li>
+          <!-- Otras entradas de datos -->
+        </ul>
+        <a href="#" class="btn btn-primary d-block mx-auto">Consultar</a>
+      </div>
+
+      <!-- Repite esta estructura para las otras cajas -->
+      <div class="col-md-2" id="top2">
+        <h5>Top 3</h5>
+        <ul>
+          <li>
+            <label for="name3">Nombre: </label>
+            <input name="name3" [(ngModel)]="topHeroe3.name" placeholder="Nombre del jugador"/>
+          </li>
+          <!-- Otras entradas de datos -->
+        </ul>
+        <a href="#" class="btn btn-primary d-block mx-auto">Consultar</a>
+      </div>
+
+      <div class="col-md-2" id="top2">
+        <h5>Top 4</h5>
+        <ul>
+          <li>
+            <label for="name4">Nombre: </label>
+            <input name="name4" [(ngModel)]="topHeroe4.name" placeholder="Nombre del jugador"/>
+          </li>
+          <!-- Otras entradas de datos -->
+        </ul>
+        <a href="#" class="btn btn-primary d-block mx-auto">Consultar</a>
+      </div>
+
+      <div class="col-md-2" id="top2">
+        <h5>Top 5</h5>
+        <ul>
+          <li>
+            <label for="name5">Nombre: </label>
+            <input name="name5" [(ngModel)]="topHeroe5.name" placeholder="Nombre del jugador"/>
+          </li>
+          <!-- Otras entradas de datos -->
+        </ul>
+        <a href="#" class="btn btn-primary d-block mx-auto">Consultar</a>
+      </div>
+
     </div>
-  </div>
-  <div>
-    <button type="=butoon" value="Click Me" style="float: initial">
-      consultar
-    </button>
-  </div>
-
-  <div>
-
-    <h5>Top 2</h5>
-
-    <ul>
-      <li>
-          <label for="name1">Nombre: </label>
-          <input name="name1" [(ngModel)]="topHeroe2.name" placeholder="Nombre del jugador"/>
-      </li>
-      <li>
-          <label for="posicion1">Posición: </label>
-          <input name="posicion1" [(ngModel)]="topHeroe2.posicion" placeholder="Posicion del jugador"/>
-      </li>
-      <li>
-          <label for="equipo1">Equipo: </label>
-          <input name="equipo1" [(ngModel)]="topHeroe2.equipo" placeholder="Equipo del jugador"/>
-      </li>
-      </ul>
-
-    <div>
-      <button type="=butoon" value="Click Me" style="float: initial">
-        consultar
-      </button>
-    </div>
-
-  </div>
-
- 
-  <div>
-
-    <h5>Top 3</h5>
-
-    <ul>
-      <li>
-          <label for="name1">Nombre: </label>
-          <input name="name1" [(ngModel)]="topHeroe3.name" placeholder="Nombre del jugador"/>
-      </li>
-      <li>
-          <label for="posicion1">Posición: </label>
-          <input name="posicion1" [(ngModel)]="topHeroe3.posicion" placeholder="Posicion del jugador"/>
-      </li>
-      <li>
-          <label for="equipo1">Equipo: </label>
-          <input name="equipo1" [(ngModel)]="topHeroe3.equipo" placeholder="Equipo del jugador"/>
-      </li>
-      </ul>
-
-    <div>
-      <button type="=butoon" value="Click Me" style="float: initial">
-        consultar
-      </button>
-    </div>
-
-  </div>
-
-  <div>
-
-    <h5>Top 4</h5>
-
-    <ul>
-      <li>
-          <label for="name1">Nombre: </label>
-          <input name="name1" [(ngModel)]="topHeroe4.name" placeholder="Nombre del jugador"/>
-      </li>
-      <li>
-          <label for="posicion1">Posición: </label>
-          <input name="posicion1" [(ngModel)]="topHeroe4.posicion" placeholder="Posicion del jugador"/>
-      </li>
-      <li>
-          <label for="equipo1">Equipo: </label>
-          <input name="equipo1" [(ngModel)]="topHeroe4.equipo" placeholder="Equipo del jugador"/>
-      </li>
-      </ul>
-
-    <div>
-      <button type="=butoon" value="Click Me" style="float: initial">
-        consultar
-      </button>
-    </div>
-
-  </div>
-
-  <div>
-
-    <h5>Top 5</h5>
-
-    <ul>
-      <li>
-          <label for="name1">Nombre: </label>
-          <input name="name1" [(ngModel)]="topHeroe5.name" placeholder="Nombre del jugador"/>
-      </li>
-      <li>
-          <label for="posicion1">Posición: </label>
-          <input name="posicion1" [(ngModel)]="topHeroe5.posicion" placeholder="Posicion del jugador"/>
-      </li>
-      <li>
-          <label for="equipo1">Equipo: </label>
-          <input name="equipo1" [(ngModel)]="topHeroe5.equipo" placeholder="Equipo del jugador"/>
-      </li>
-      </ul>
-
-    <div>
-      <button type="=butoon" value="Click Me" style="float: initial">
-        consultar
-      </button>
-    </div>
-
   </div>
 </div>
+
+
+
+    
