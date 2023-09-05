@@ -6,7 +6,8 @@ import { HEROES, Heroe } from '../heroe';
   styleUrls: ['./detalle-heroe.css']
 })
 export class DetalleHeroeComponent {
-  mysHeroes:Heroe[] = HEROES
+  mysHeroes:Heroe[] = HEROES;
+  selectedHeroe: Heroe|null=null;
 
   deleteHeroe(hero: Heroe): void {
     const index = this.mysHeroes.indexOf(hero);
@@ -21,5 +22,13 @@ export class DetalleHeroeComponent {
     button.style.backgroundColor = 'red';
   }
 
+  selectHeroe(heroe:Heroe){
+    this.selectedHeroe = heroe;
+  }
+ 
   
+  updateHeroe(myHeroe: Heroe, newNameHeroe:string){
+    myHeroe.name = newNameHeroe;
+  }
+
 }

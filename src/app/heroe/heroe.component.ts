@@ -8,17 +8,14 @@ import { HEROES, Heroe } from '../heroe';
 })
 export class HeroeComponent {
   mysHeroes: Heroe[] = HEROES;
+  myNewHeroe:Heroe={id:-1,name:"Nombre Jugador",posicion:"Posicion Jugador",equipo:"Nombre de su equipo",numeroCamiseta:0}
 
-  newHeroe(nameHeroe: string, newPosicion: string, newEquipo: string,newCamiseta: number) {
-  let newid: number = this.mysHeroes.length + 1;
-  console.log('entro al metodo desde el click');
-  this.mysHeroes.push({
-    id: newid,
-    name: nameHeroe,
-    posicion: newPosicion,
-    equipo: newEquipo,
-     numeroCamiseta: newCamiseta,
-  });
+  
+newHeroe2(){
+  this.myNewHeroe.id = this.mysHeroes.length + 1;
+  this.mysHeroes.push(this.myNewHeroe);
+  this.myNewHeroe={id:-1,name:"Nombre Jugador",posicion:"Posicion Jugador",equipo:"Nombre de su equipo",numeroCamiseta:-1}
+
 }
 
   mouseMoveHandler(event: MouseEvent): void {

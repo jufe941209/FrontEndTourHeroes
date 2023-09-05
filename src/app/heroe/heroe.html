@@ -21,65 +21,85 @@
   </div>
 </div>
 
+
 <div class="container center-content">
   <div class="row justify-content-center">
     <div class="col-md-12">
-      <form action="#" method="POST">
-        <div class="form-group">
-          <label for="namenewheroe">Nombre del nuevo jugador</label>
-          <input
-            #namenewheroe
-            name="namenewheroe"
-            id="namenewheroe"
-            type="text"
-            class="form-control"
-            placeholder="Nombre del nuevo jugador"
-          >
-        </div>
-        <div class="form-group">
-          <label for="posicion">Posición</label>
-          <input
-            #posicion
-            name="posicion"
-            id="posicion"
-            type="text"
-            class="form-control"
-            placeholder="Posición"
-          >
-        </div>
-        <div class="form-group">
-          <label for="equipo">Equipo</label>
-          <input
-            #equipo
-            name="equipo"
-            id="equipo"
-            type="text"
-            class="form-control"
-            placeholder="Equipo"
-          >
-        </div>
-        <div class="form-group">
-          <label for="camiseta">Número de camiseta</label>
-          <input
-            #camiseta
-            name="camiseta"
-            id="camiseta"
-            type="number"
-            class="form-control"
-            placeholder="Número de camiseta"
-          >
-        </div>
-        <div class="text-center">
-          <button
-            type="button"
-            class="btn btn-primary"
-            (click)="newHeroe(namenewheroe.value, posicion.value, equipo.value, +camiseta.value)"
-            (mousemove)="mouseMoveHandler($event)"
-          >
-            Agregar Héroe
-          </button>
-        </div>
-      </form>
+      <div>
+        
+        <input [(ngModel)]="myNewHeroe.name">
+        <input [(ngModel)]="myNewHeroe.posicion">
+        <input [(ngModel)]="myNewHeroe.equipo">
+        <input [(ngModel)]="myNewHeroe.numeroCamiseta">
+        <button
+                  type="button"
+                  class="btn btn-primary"
+                  (click)="newHeroe2()"
+                  (mousemove)="mouseMoveHandler($event)"
+                >Crear</button>
+      </div>
     </div>
   </div>
+
+  
+</div> 
+
+<!-- Codigo usando un form
+
+<label for="namenewheroe">Nombre del nuevo jugador</label>
+<input
+  #namenewheroe
+  name="namenewheroe"
+  id="namenewheroe"
+  type="text"
+  class="form-control"
+  placeholder="Nombre del nuevo jugador"
+>
 </div>
+<div class="form-group">
+<label for="posicion">Posición</label>
+<input
+  #posicion
+  name="posicion"
+  id="posicion"
+  type="text"
+  class="form-control"
+  placeholder="Posición"
+>
+</div>
+<div class="form-group">
+<label for="equipo">Equipo</label>
+<input
+  #equipo
+  name="equipo"
+  id="equipo"
+  type="text"
+  class="form-control"
+  placeholder="Equipo"
+>
+</div>
+<div class="form-group">
+<label for="camiseta">Número de camiseta</label>
+<input
+  #camiseta
+  name="camiseta"
+  id="camiseta"
+  type="number"
+  class="form-control"
+  placeholder="Número de camiseta"
+>
+</div>
+<div class="text-center">
+<button
+  type="button"
+  class="btn btn-primary"
+  (click)="newHeroe(namenewheroe.value, posicion.value, equipo.value, +camiseta.value)"
+  (mousemove)="mouseMoveHandler($event)"
+>
+  Agregar Héroe
+</button>
+</div>
+</form>
+</div>
+</div>
+</div> -->

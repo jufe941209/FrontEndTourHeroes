@@ -25,3 +25,10 @@ h3{
     height: 300px; /* Puedes ajustar este valor según tus necesidades */
     object-fit:cover; /* Controla cómo se ajusta la imagen en el contenedor */
   }
+/*.myButton{
+    background-color: cyan;
+
+}
+.mySelectedButton{
+    background-color: red;
+}*/
